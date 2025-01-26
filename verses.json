@@ -1,0 +1,59 @@
+[
+    {
+        "arabic": "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ",
+        "words": ["In", "the", "name", "of", "Allah", "the", "Most", "Gracious", "the", "Most", "Merciful"]
+    },
+    {
+        "arabic": "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+        "words": ["Say", "He", "is", "Allah", "the", "One"]
+    },
+    {
+        "arabic": "اهْدِنَا الصِّرَاطَ ٱلْمُسْتَقِيمَ",
+        "words": ["Guide", "us", "to", "the", "Straight", "Path"]
+    },
+    {
+        "arabic": "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُبِينًا",
+        "words": ["Indeed", "we", "have", "given", "you", "a", "clear", "victory"]
+    },
+    {
+        "arabic": "وَاللَّهُ خَيْرُ ٱلْمَاكِرِينَ",
+        "words": ["And", "Allah", "is", "the", "Best", "of", "Planners"]
+    },
+    {
+        "arabic": "إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ",
+        "words": ["Indeed", "Allah", "is", "over", "all things", "competent"]
+    },
+    {
+        "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+        "words": ["For", "indeed", "with", "hardship", "comes", "ease"]
+    },
+    {
+        "arabic": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+        "words": ["And say", "My Lord", "increase me", "in", "knowledge"]
+    },
+    {
+        "arabic": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ",
+        "words": ["And", "you", "do not", "will", "except", "that", "Allah", "wills"]
+    },
+    {
+        "arabic": "ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ",
+        "words": ["Allah", "there is", "no", "deity", "except", "Him"]
+    },
+    {
+        "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ",
+        "words": ["O you", "who", "have believed", "fear", "Allah"]
+    },
+    {
+        "arabic": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ",
+        "words": ["There is no", "power", "and", "no", "strength", "except", "by", "Allah"]
+    },
+    {
+        "arabic": "يَهْدِي مَن يَشَآءُ إِلَىٰ صِرَٰطٍۢ مُّسْتَقِيمٍۢ",
+        "words": ["He guides", "whom", "He wills", "to", "a", "straight", "path"]
+    },
+    {
+        "arabic": "وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ",
+        "words": ["And", "He", "is", "with", "you", "wherever", "you", "are"]
+    }
+    
+]

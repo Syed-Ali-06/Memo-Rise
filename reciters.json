@@ -1,0 +1,75 @@
+[
+    {
+        "audioSrc": "YD1.mp3",
+        "choice1": "Sheikh Yasser Al-Dossari",
+        "choice2": "Sheikh Mustafa Ismail",
+        "choice3": "Sheikh  Hudhayfi",
+        "choice4": "Sheikh  Shuraim",
+        "answer": 1
+    },
+    {
+        "audioSrc": "Hud1.mp3",
+        "choice1": "Sheikh  Mishary",
+        "choice2": "Sheikh  Ali Jabir",
+        "choice3": "Sheikh Saeed",
+        "choice4": "Sheikh Hudhayfi",
+        "answer": 4
+    },
+    {
+        "audioSrc": "Mah1.mp3",
+        "choice1": "Sheikh Sudais",
+        "choice2": "Sheikh Maher Al-Mu'aiqly",
+        "choice3": "Sheikh Abdul qadir",
+        "choice4": "Sheikh Yasser",
+        "answer": 2
+    },
+    {
+        "audioSrc": "Sud1.mp3",
+        "choice1": "Sheikh Sudais",
+        "choice2": "Sheikh Maher Al-Mu'aiqly",
+        "choice3": "Sheikh Hudhayfi",
+        "choice4": "Sheikh Shuraim",
+        "answer": 1
+    },
+    {
+        "audioSrc": "Shatri.mp3",
+        "choice1": "Sheikh Maher Al-Mu'aiqly ",
+        "choice2": "Sheikh Abu Bakr Al-Shatri",
+        "choice3": "Sheikh Shuraim ",
+        "choice4": "Sheikh Sudais",
+        "answer": 2
+    },
+    {
+        "audioSrc": "Mus.mp3",
+        "choice1": "Sheikh Yasser Al-Dossari",
+        "choice2": "Sheikh Salah Budair ",
+        "choice3": "Sheikh Mustafa Ismail ",
+        "choice4": "Sheikh Khalid Muhanna ",
+        "answer": 3
+    },
+    {
+        "audioSrc": "Minsh.mp3",
+        "choice1": "Sheikh Minshawi ",
+        "choice2": "Sheikh Salah Budair ",
+        "choice3": "Sheikh Mustafa Ismail ",
+        "choice4": "Sheikh Saad Al-Ghamdi ",
+        "answer": 1
+    },
+    {
+        "audioSrc": "Ahm.mp3",
+        "choice1": "Sheikh Ahmed Taleb Hameed ",
+        "choice2": "Sheikh Sudais ",
+        "choice3": "Sheikh Noreen Siddiq ",
+        "choice4": "Sheikh Maher Al-Mu'aiqly ",
+        "answer": 1
+    },
+    {
+        "audioSrc": "Abd.mp3",
+        "choice1": "Sheikh Ali Jaber",
+        "choice2": "Sheikh Mustafa Ismail",
+        "choice3": "Sheikh Yasser Al-Dossari ",
+        "choice4": "Sheikh Abdullah Al-Juhany ",
+        "answer": 4
+    }
+
+]

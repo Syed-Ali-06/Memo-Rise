@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Reciter</title>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="flex-center flex-column hidden">
+            <h2 id="progressText" class="hud-prefix">
+                Question x of y
+            </h2>
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+            </div>
+            <div class="question-container">
+                <audio id="recitationAudio" controls></audio>
+            </div>
+            <div class="choices-container">
+                <div class="choice-container">
+                    <p class="choice-text" data-number="1"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-text" data-number="2"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-text" data-number="3"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-text" data-number="4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="guessTheReciter.js"></script>
+</body>
+</html>

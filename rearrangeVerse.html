@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rearrange the Verse</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="flex-center flex-column hidden">
+            <h2 id="progressText" class="hud-prefix">Question x of y</h2>
+            <div id="progressBar">
+                <div id="progressBarFull"></div>
+            </div>
+
+            <!-- Arabic Verse Display -->
+            <div class="arabic-verse">
+                <h3 id="arabicVerse"></h3>
+            </div>
+
+            <!-- English Words Container -->
+            <div class="verse-container">
+                <div id="wordContainer" class="flex-center word-container"></div>
+            </div>
+
+            <button id="submitBtn" class="btn">Submit</button>
+        </div>
+    </div>
+    <script src="rearrangeVerse.js"></script>
+</body>
+</html>

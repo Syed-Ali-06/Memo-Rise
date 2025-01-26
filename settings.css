@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    background-color: #f5f5dc; /* Cream beige background for the entire page */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width to prevent it from getting too wide */
+    margin: 50px auto; /* Add top margin to move it down and center horizontally */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Keep the container white for contrast */
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    height: 80vh; /* 80% of the viewport height */
+    justify-content: center; /* Center content vertically inside the container */
+}
+
+
+/* Title Styling */
+.title {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space between title and content */
+    font-size: 3.5rem; /* Increase font size */
+    font-weight: bold;
+}
+
+/* Form Element Styling */
+.setting {
+    margin-bottom: 20px;
+}
+
+.setting label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.setting input,
+.setting select {
+    width: 90%;
+    padding: 12px;
+    font-size: 1.2rem; /* Increase font size */
+    border: 1px solid #000; /* Thin black border */
+    border-radius: 4px;
+    background-color: #fff; /* White background for input/select boxes */
+}
+
+/* Button Styling */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+}
+
+.btn {
+    padding: 15px 30px; /* Increase button padding */
+    font-size: 1.2rem; /* Increase font size */
+    border: 2px solid #000; /* Thin black border */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ffffff; /* White background for buttons */
+    color: #000000;
+    margin-bottom: 15px; /* Increase margin between buttons */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #f8f9fa;
+    color: #0056b3;
+    box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.2);
+    transform: translate(-0.1rem);
+    transition: transform 250ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* General Element Styling */
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.9rem;
+    color: #000000;
+    margin-bottom: 5rem;
+}
+
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 100%; /* Ensure full width within its container */
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: 10px solid #000; /* Thin black border */
+    background-color: #fff; /* White background for input */
+}
+
+input::placeholder {
+    color: #aaa;
+}
