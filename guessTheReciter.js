@@ -38,7 +38,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         // Save the score in localStorage to retrieve it on the high score page
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign("/end.html");
+        return window.location.assign("end.html");
     }
 
     questionCounter++;
