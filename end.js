@@ -40,5 +40,5 @@ saveHighScore = e => {
   localStorage.setItem("highScores", JSON.stringify(highScores));
 
   // Redirect to the home page or high scores page
-  window.location.assign("/");
+  window.location.assign("index.html");
 };
