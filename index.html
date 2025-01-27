@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NEA</title>
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <body>
-        <div class="container">
-            <div id="home" class="flex-center flex-column">
-                <h1>Memo-Rise</h1>
-                <a class="btn" href="home.html">Game Modes</a>
-                <a class="btn" href="highscores.html">High Scores</a>
-                <a href="settings.html" class="btn">Settings</a>
-                <a class="btn" href="https://www.linkedin.com/in/syed-mm-ali/">Created by Syed Ali </a>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo-Rise</title>
+    <link rel="stylesheet" href="app.css">
+    <style>
+        /* Add styles for the instructions */
+        .instructions {
+            position: fixed;
+            top: 50px;
+            right: 20px;
+            width: 300px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            line-height: 1.5;
+            z-index: 10; /* Ensure it appears above other elements */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>Memo-Rise</h1>
+            <a class="btn" href="home.html">Game Modes</a>
+            <a class="btn" href="highscores.html">High Scores</a>
+            <a class="btn" href="settings.html">Settings</a>
+            <a class="btn" href="https://www.linkedin.com/in/syed-mm-ali" target="_blank">Created by <b>Syed Ali</b></a>
         </div>
-    </body>
-    </html>
+
+        <!-- Instructions Section -->
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>Welcome to Memo-Rise! Here’s how to get started:</p>
+            <ul>
+                <li>Click "Game Modes" to start the game.</li>
+                <li>View your performance in "High Scores".</li>
+                <li>Customize settings in the "Settings" menu.</li>
+                <li>Challenge yourself and have fun!</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
