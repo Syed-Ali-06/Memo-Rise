@@ -14,7 +14,7 @@ let availableQuestions = [];
 let questions = [];
 
 // Retrieve the number of questions from localStorage, with a fallback to 10 if not set
-const MAX_QUESTIONS = parseInt(localStorage.getItem('numQuestions')) || 10;
+const MAX_QUESTIONS = parseInt(localStorage.getItem('numQuestions')) || 5;
 const CORRECT_BONUS = 10;
 
 // Function to load questions based on the selected Juz
