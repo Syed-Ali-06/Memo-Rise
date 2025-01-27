@@ -20,7 +20,6 @@ const CORRECT_BONUS = 10;
 // Function to load questions based on the selected Juz
 function loadQuestions() {
     const selectedJuz = localStorage.getItem('selectedJuz') || 1; // Default to Juz 1 if none selected
-    const selectedJuz = localStorage.getItem('selectedJuz'); // Retrieve the selected Juz from localStorage
 
     fetch("questions.json")
         .then(res => res.json())
