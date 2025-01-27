@@ -6,20 +6,19 @@
     <title>Memo-Rise</title>
     <link rel="stylesheet" href="app.css">
     <style>
-        /* Add styles for the instructions */
-        .instructions {
-            position: fixed;
-            top: 50px;
-            right: 20px;
-            width: 300px;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            font-size: 14px;
-            line-height: 1.5;
-            z-index: 10;
+        /* Style for the LinkedIn text */
+        .creator-text {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #333;
+        }
+        .creator-text a {
+            color: #0072b1; /* LinkedIn blue */
+            text-decoration: none;
+        }
+        .creator-text a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -27,16 +26,17 @@
     <div class="container">
         <div id="home" class="flex-center flex-column">
             <h1>Memo-Rise</h1>
+            <p class="creator-text">
+                Created by <a href="https://www.linkedin.com/in/syed-mm-ali" target="_blank">Syed Ali</a>
+            </p>
             <a class="btn" href="home.html">Game Modes</a>
             <a class="btn" href="highscores.html">High Scores</a>
             <a class="btn" href="settings.html">Settings</a>
-            <a class="btn" href="https://www.linkedin.com/in/syed-mm-ali" target="_blank">Created by Syed Ali</a>
         </div>
 
         <!-- Instructions Section -->
         <div class="instructions">
             <p>Welcome to Memo-Rise!</p>
-            
             <ul>
                 <li>Adjust the settings before getting started.</li>
                 <li>Click "Game Modes" to start the game.</li>
