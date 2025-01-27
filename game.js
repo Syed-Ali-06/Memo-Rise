@@ -106,4 +106,5 @@ incrementScore = num => {
 };
 
 // Load questions based on the selected Juz when the page loads
-loadQuestions();
+
+window.onload = loadQuestions;
