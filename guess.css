@@ -18,7 +18,7 @@ body {
     align-items: center;
     width: 90%;
     max-width: 500px;
-    background: #d6eaf8; /* Blue background */
+    background: #000000; /* black background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
