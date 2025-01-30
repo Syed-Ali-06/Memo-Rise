@@ -16,8 +16,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    max-width: 80px;
+    width: 90%;
+    max-width: 500px;
     background: #007bb5; /* Blue background */
     padding: 20px;
     border-radius: 10px;
