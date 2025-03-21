@@ -1,4 +1,4 @@
-const questionElement = document.getElementById("question");
+const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
@@ -20,13 +20,15 @@ const CORRECT_BONUS = 10;
 function loadQuestions() {
     const selectedJuz = localStorage.getItem('selectedJuz') || 1; // Default to Juz 1 if none selected
 
-    fetch('next.json')
-        .then(response => response.json())
-        .then(data => {
-            questions = data[selectedJuz] || []; // Access questions for the selected Juz
+    fetch("previous.json")
+        .then(res => res.json())
+        .then(loadedQuestions => {
+            questions = loadedQuestions[selectedJuz] || []; // Access questions for the selected Juz
             startGame();
         })
-        .catch(error => console.error('Error fetching questions:', error));
+        .catch(err => {
+            console.error('Error fetching questions:', err);
+        });
 }
 
 // Start the game
@@ -39,7 +41,7 @@ function startGame() {
     loader.classList.add("hidden");
 }
 
-// Fetch new questions
+// Fetch a new question
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
@@ -52,7 +54,7 @@ function getNewQuestion() {
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    questionElement.innerText = currentQuestion.question;
+    question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
         const number = choice.dataset["number"];
@@ -87,6 +89,7 @@ choices.forEach(choice => {
     });
 });
 
+// Increment the score
 function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
