@@ -1,4 +1,4 @@
-const question = document.getElementById("question");
+const questionElement = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
@@ -18,21 +18,15 @@ const CORRECT_BONUS = 10;
 
 // Load questions based on the selected Juz
 function loadQuestions() {
-    const selectedJuz = localStorage.getItem('selectedJuz') || "1"; // Default to Juz 1
+    const selectedJuz = localStorage.getItem('selectedJuz') || 1; // Default to Juz 1 if none selected
 
-    fetch("previous.json")
-        .then(res => res.json())
-        .then(loadedQuestions => {
-            if (loadedQuestions[selectedJuz]) {
-                questions = loadedQuestions[selectedJuz];
-                startGame();
-            } else {
-                console.error(`No questions found for Juz ${selectedJuz}`);
-            }
+    fetch('next.json')
+        .then(response => response.json())
+        .then(data => {
+            questions = data[selectedJuz] || []; // Access questions for the selected Juz
+            startGame();
         })
-        .catch(err => {
-            console.error('Error fetching questions:', err);
-        });
+        .catch(error => console.error('Error fetching questions:', error));
 }
 
 // Start the game
@@ -40,23 +34,16 @@ function startGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-
-    if (availableQuestions.length === 0) {
-        console.error("No questions available.");
-        return;
-    }
-
+    getNewQuestion();
     game.classList.remove("hidden");
     loader.classList.add("hidden");
-    getNewQuestion();
 }
 
-// Fetch a new question
+// Fetch new questions
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
-        window.location.assign("end.html");
-        return;
+        return window.location.assign("end.html");
     }
 
     questionCounter++;
@@ -64,19 +51,15 @@ function getNewQuestion() {
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions.splice(questionIndex, 1)[0];
-
-    if (question) {
-        question.innerText = currentQuestion.question;
-    }
+    currentQuestion = availableQuestions[questionIndex];
+    questionElement.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
         const number = choice.dataset["number"];
-        if (number && currentQuestion["choice" + number]) {
-            choice.innerText = currentQuestion["choice" + number];
-        }
+        choice.innerText = currentQuestion["choice" + number];
     });
 
+    availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
 }
 
@@ -88,8 +71,6 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-
-        if (!selectedAnswer) return;
 
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
@@ -106,7 +87,6 @@ choices.forEach(choice => {
     });
 });
 
-// Increment the score
 function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
